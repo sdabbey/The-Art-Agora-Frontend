@@ -1,0 +1,21 @@
+// Mixin for responsive typography
+@mixin responsive-font($size-mobile, $size-desktop) {
+    font-size: $size-mobile;
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: $size-desktop;
+    }
+}
+
+// Mixin for a button style
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $padding-base;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
