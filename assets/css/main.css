@@ -227,6 +227,7 @@ nav.sidebar .content form span, nav.sidebar .content form i.bx {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   /* Scrollbar styles */
 }
 .main-body::-webkit-scrollbar {
@@ -583,4 +584,68 @@ nav.sidebar .content form span, nav.sidebar .content form i.bx {
   transition: 0.3s ease;
   background-color: rgb(216, 9, 36);
   color: #fff;
+}
+.main-body footer.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #1A1B1B;
+  padding: 5% 10%;
+}
+.main-body footer.footer .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-body footer.footer .content .logo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10%;
+}
+.main-body footer.footer .content .logo img {
+  width: 8rem;
+  height: 7.9rem;
+}
+.main-body footer.footer .content .logo span {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  color: #3498db;
+}
+.main-body footer.footer .content .tab-links {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 10%;
+  font-family: "Montserrat", sans-serif;
+}
+.main-body footer.footer .content .tab-links a {
+  color: #fff;
+  font-size: 11.2px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  text-underline-offset: 4px;
+}
+.main-body footer.footer .content .tab-links a:hover {
+  color: #b1b1b1;
+}
+.main-body footer.footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12.96px;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
