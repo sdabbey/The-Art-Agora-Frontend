@@ -501,4 +501,86 @@ nav.sidebar .content form span, nav.sidebar .content form i.bx {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+}
+.main-body .mission {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.main-body .mission .img-bg {
+  width: 100%;
+  height: 100%;
+}
+.main-body .mission .img-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-body .mission .text-content {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  font-family: "Montserrat", sans-serif;
+}
+.main-body .mission .text-content h1 {
+  font-size: 42.08px;
+  font-weight: 600;
+  line-height: 46.08px;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+.main-body .mission .text-content p {
+  width: 80%;
+  font-size: 12.96px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+.main-body .mission .text-content .action-btn {
+  padding: 0 30px;
+  color: #000000;
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 53px;
+  font-size: 15.04px;
+}
+.main-body .mission .text-content .action-btn:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: rgb(216, 9, 36);
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
