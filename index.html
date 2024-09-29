@@ -34,14 +34,24 @@
     <nav class="sidebar">
         <div class="header">
             <div class="top-action">
-                <a href="#" class="action-btn">
+                <a href="#" class="action-btn favorite">
                     <span class="material-symbols-outlined">
                     favorite
+                    </span>
+                </a>
+                <a href="#" class="action-btn search" id="search-trigger">
+                    <span class="material-symbols-outlined">
+                    search
                     </span>
                 </a>
                 <a href="#" class="action-btn">
                     <span class="material-symbols-outlined">
                         shopping_bag
+                    </span>
+                </a>
+                <a href="#" class="nav-trigger action-btn" id="nav-trigger">
+                    <span class="material-symbols-outlined">
+                        menu
                     </span>
                 </a>
             </div>
@@ -50,8 +60,12 @@
                 <h3>The Art Agora</h3>
             </div>
         </div>
-        <div class="content">
-           
+        <div class="content" id="menu-content">
+            <div class="close" id="nav-closer">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#">Collected Works</a></li>
                 <li><a href="#">Virtual Gallery</a></li>
@@ -61,18 +75,24 @@
                 <li><a href="#">Shop</a></li>
     
             </ul>
-            <form action="#">
+            <form action="#" id="search-input">
                 <input type="search" placeholder="Search...">
                 <i class='bx bx-search'></i>
+                <div class="search-close" id="search-closer">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
             </form>
         </div>
     </nav>
     
     
     <main class="main-body">
+        <div class="overlay" id="main-overlay"></div>
         <div class="background-audio">
             <audio controls>
-                <source src="audiofile.mp3" type="audio/mpeg">
+                <source src="assets/Juzz-.m4a" type="audio/mpeg">
                 <source src="audiofile.ogg" type="audio/ogg">
                 Your browser does not support the audio element.
             </audio>
