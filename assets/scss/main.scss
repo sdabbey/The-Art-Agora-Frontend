@@ -55,8 +55,8 @@ nav.sidebar{
             display: flex;
             align-items: center;
             img{
-                width: $base-font-size * 3;
-                height: $base-font-size * 2.9;
+                width: 100%;
+                
             }
             h3{
                 font-size: $base-font-size * 2;
@@ -78,6 +78,7 @@ nav.sidebar{
         gap: 2rem;
         .close{
             display: none;
+            
         }
         .nav-links{
             
@@ -139,6 +140,10 @@ nav.sidebar{
                 right: 2%;
                 color: #dad9d98a;
                 font-size: $base-font-size * 1.7;
+            }
+            .search-close{
+                display: none;
+                
             }
         }
     }
@@ -337,11 +342,69 @@ nav.sidebar{
     .background-audio{
         position: absolute;
         bottom: 0;
+        padding: $padding-base * 2;
         right: 0;
         box-sizing: border-box;
-        border: 1px solid red;
+       
         display: flex;
+        gap: .5rem;
+        flex-direction: column;
         z-index: 223;
+        .audio-details{
+            background-color: $white;
+            min-width: 250px;
+            color: $black;
+            border-radius: 10px;
+            padding: $padding-base * 0.9;
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: $base-font-size * 1.5;
+            .player-img{
+                display: flex;
+                align-items: center;
+              
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                }
+            }
+            
+            h2{
+                color: $black;
+                font-size: $base-font-size * 0.9;
+            }
+            h3{
+                color: black;
+                font-weight: 400;
+                font-size: $base-font-size * .8;
+            }
+        }
+        .player-controls{
+            background-color: $white;
+            padding: $padding-base * 0.7;
+            width: 220px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+           
+            gap: .5rem;
+            justify-content:center;
+            i.bx{
+                font-size: $base-font-size * 2.5;
+                color: $black;
+                user-select: none;
+                cursor: pointer;
+                &#play{
+                    font-size: $base-font-size * 3.5;
+                }
+                &.back{
+                    transform: rotate(180deg);
+                }
+            }
+        }
     }
 
     .landing_page{

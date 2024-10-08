@@ -116,8 +116,7 @@ nav.sidebar .header .logo {
           align-items: center;
 }
 nav.sidebar .header .logo img {
-  width: 48px;
-  height: 46.4px;
+  width: 100%;
 }
 nav.sidebar .header .logo h3 {
   font-size: 32px;
@@ -223,6 +222,9 @@ nav.sidebar .content form span, nav.sidebar .content form i.bx {
   right: 2%;
   color: rgba(218, 217, 217, 0.5411764706);
   font-size: 27.2px;
+}
+nav.sidebar .content form .search-close {
+  display: none;
 }
 @media (max-width: 768px) {
   nav.sidebar {
@@ -467,14 +469,91 @@ nav.sidebar .content form span, nav.sidebar .content form i.bx {
 .main-body .background-audio {
   position: absolute;
   bottom: 0;
+  padding: 20px;
   right: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 0.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   z-index: 223;
+}
+.main-body .background-audio .audio-details {
+  background-color: #fff;
+  min-width: 250px;
+  color: #000000;
+  border-radius: 10px;
+  padding: 9px;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+.main-body .background-audio .audio-details .player-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-body .background-audio .audio-details .player-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.main-body .background-audio .audio-details h2 {
+  color: #000000;
+  font-size: 14.4px;
+}
+.main-body .background-audio .audio-details h3 {
+  color: black;
+  font-weight: 400;
+  font-size: 12.8px;
+}
+.main-body .background-audio .player-controls {
+  background-color: #fff;
+  padding: 7px;
+  width: 220px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-body .background-audio .player-controls i.bx {
+  font-size: 40px;
+  color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.main-body .background-audio .player-controls i.bx#play {
+  font-size: 56px;
+}
+.main-body .background-audio .player-controls i.bx.back {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .main-body .landing_page {
   margin: 0 !important;
