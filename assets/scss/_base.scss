@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 // Global body styles
@@ -16,8 +17,9 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-
+    margin: 0;
     overflow: hidden;
+    position: relative;
     @media (min-width: $breakpoint-desktop) {
         flex-direction: row;
     }
