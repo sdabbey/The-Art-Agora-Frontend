@@ -1127,6 +1127,12 @@ nav.sidebar form .search-close {
     font-size: 15.04px;
   }
 }
+.main-body .gallery-iframe {
+  width: 100%;
+}
+.main-body .gallery-iframe iframe {
+  width: 100%;
+}
 .main-body footer.footer {
   width: 100%;
   height: -webkit-fit-content;

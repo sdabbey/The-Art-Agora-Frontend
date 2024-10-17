@@ -733,6 +733,12 @@ nav.sidebar{
         }
     }
 
+    .gallery-iframe{
+        width: 100%;
+        iframe{
+            width: 100%;
+        }
+    }
     footer.footer{
         width: 100%;
         height: fit-content;
