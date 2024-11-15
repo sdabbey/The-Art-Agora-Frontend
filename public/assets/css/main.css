@@ -520,6 +520,7 @@ nav.sidebar form .search-close {
 .preloader img {
   width: 200px;
   margin-bottom: 20px;
+  margin-left: 15px;
 }
 .preloader .spinner {
   width: 40px;
