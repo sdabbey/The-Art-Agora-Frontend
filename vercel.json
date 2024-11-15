@@ -18,6 +18,18 @@
       "use": "@vercel/static"
     },
     {
+      "src": "public/assets/images/apparels/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/assets/images/mission/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/assets/images/fashion/*",
+      "use": "@vercel/static"
+    },
+    {
       "src": "public/assets/audio/*",
       "use": "@vercel/static"
     },
