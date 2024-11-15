@@ -364,13 +364,14 @@ nav.sidebar{
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        img {
+            width: 200px;
+            margin-bottom: 20px;
+            margin-left: 15px;
+        }
     }
 
-    img {
-        width: 200px;
-        margin-bottom: 20px;
-        margin-left: 15px;
-    }
+    
 
     .spinner {
         width: 40px;

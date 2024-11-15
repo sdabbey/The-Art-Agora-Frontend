@@ -517,7 +517,7 @@ nav.sidebar form .search-close {
           justify-content: center;
   gap: 1rem;
 }
-.preloader img {
+.preloader .content img {
   width: 200px;
   margin-bottom: 20px;
   margin-left: 15px;
