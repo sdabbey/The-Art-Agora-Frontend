@@ -997,6 +997,50 @@ nav.sidebar{
         }
     }
 
+    .coming-soon-foundation{
+
+        width: 100%;
+        min-height: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        padding: 1rem;
+        box-sizing: border-box;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/assets/images/landingpage.png);
+            background-size: cover;
+            background-position: center;
+            filter: blur(0px); /* Adjust the blur intensity here */
+            z-index: -1;
+        }
+        span{
+            color: white;
+            font-size: $base-font-size * 1.5;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        h1{
+            color: $tertiary-color;
+            font-size: $base-font-size * 3;
+            z-index: 2;
+            box-sizing: border-box;
+            
+            
+
+        }
+        p{
+            color: white;
+        }
+    }
+
     .gallery-iframe{
         width: 100%;
         

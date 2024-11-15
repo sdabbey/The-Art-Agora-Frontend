@@ -1457,6 +1457,57 @@ nav.sidebar form .search-close {
 .main-body .coming-soon p {
   color: white;
 }
+.main-body .coming-soon-foundation {
+  width: 100%;
+  min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main-body .coming-soon-foundation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/landingpage.png);
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(0px);
+          filter: blur(0px); /* Adjust the blur intensity here */
+  z-index: -1;
+}
+.main-body .coming-soon-foundation span {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.main-body .coming-soon-foundation h1 {
+  color: rgb(216, 9, 36);
+  font-size: 48px;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main-body .coming-soon-foundation p {
+  color: white;
+}
 .main-body .gallery-iframe {
   width: 100%;
   height: 100vh;
