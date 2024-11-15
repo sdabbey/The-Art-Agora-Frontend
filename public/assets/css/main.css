@@ -1497,6 +1497,7 @@ nav.sidebar form .search-close {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 600;
+  text-align: center;
 }
 .main-body .coming-soon-foundation h1 {
   color: rgb(216, 9, 36);
