@@ -30,6 +30,8 @@ searchCloser.addEventListener("click", () => {
     searchInput.classList.remove("active")
 })
 
+
+//Pop up
 document.getElementById('popup-closer').addEventListener('click', function() {
     document.querySelector('.popup').style.display = 'none';
     startMusic();
@@ -146,6 +148,8 @@ document.getElementById('subscribe-form').addEventListener('submit', async (even
 
         const result = await response.json();
         alert(result.message);
+        document.querySelector('.popup').style.display = 'none';
+        startMusic();
 
     } catch (error) {
         console.error('Error:', error);
