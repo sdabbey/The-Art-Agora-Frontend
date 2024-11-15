@@ -1459,7 +1459,6 @@ nav.sidebar form .search-close {
 }
 .main-body .gallery-iframe {
   width: 100%;
-  border: 1px solid red;
   height: 100vh;
 }
 .main-body .gallery-iframe iframe {
