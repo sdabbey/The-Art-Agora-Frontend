@@ -401,16 +401,11 @@ nav.sidebar{
         padding: $padding-base * 2;
         right: 0;
         box-sizing: border-box;
-        border: 1px solid red;
+        
         gap: 1rem;
         display: flex;
         flex-direction: column;
         z-index: 223;
-        @media (max-width: $breakpoint-mobile) {
-            display: none;
-            
-            
-        }
         .audio-details{
             background-color: $white;
             min-width: 250px;
@@ -466,6 +461,42 @@ nav.sidebar{
                 }
             }
         }
+        @media (max-width: $breakpoint-mobile) {
+            display: flex;
+            align-items: flex-end;
+            bottom: 10%;
+            gap: .5rem;
+            right: 0%;
+            .audio-details{
+                padding: $padding-base * 0.5;
+                .player-img{
+                    img{
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+                h2{
+                    font-size: $base-font-size * 0.7;
+                }
+                h3{
+                    font-size: $base-font-size * 0.6;
+                }
+            }
+            .player-controls{
+                padding: $padding-base * 0.3;
+                width: 100px;
+                i.bx{
+                    font-size: $base-font-size * 1.5;
+                    &.back{
+                        display: none;
+                    }
+                    &.forward{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
     }
 
     .popup {
