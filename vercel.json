@@ -20,6 +20,10 @@
     {
       "src": "public/assets/audio/*",
       "use": "@vercel/static"
+    },
+    {
+      "src": "public/assets/js/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [

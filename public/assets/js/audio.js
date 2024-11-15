@@ -10,7 +10,7 @@ const music = new Audio();
 
 const songs = [
     {
-        path: 'assets/Juzz.m4a',
+        path: 'assets/audio/Juzz.m4a',
         displayName: 'TheAA - Jazz',
         cover: 'assets/images/hoodie.png',
         artist: 'The Art Agora',
